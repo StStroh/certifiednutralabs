@@ -1,0 +1,94 @@
+.thank-you-card {
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 16px;
+  margin: 32px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: inline-block;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+  color: #667eea;
+  background: white;
+  border-color: #667eea;
+}
+
+.btn-secondary:hover {
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.trust-line {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3748;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.contact-line {
+  margin-top: 16px;
+  font-size: 16px;
+  color: #718096;
+  line-height: 1.5;
+}
+
+.contact-line a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.contact-line a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .button-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .trust-line {
+    font-size: 12px;
+  }
+
+  .contact-line {
+    font-size: 14px;
+  }
+}
